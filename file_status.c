@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
         counter = 1;
         while (argv[counter])
         {
-                printf("%s:", argv[counter]);
+                printf("%s: ", argv[counter]);
                 if (stat(argv[counter], &status) == 0)
                 {
                         printf("File found\n");
