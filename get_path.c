@@ -6,24 +6,23 @@
 #include <unistd.h>
 
 
-void printPath()
+void print_path(void)
 {
-        char *path = getenv("PATH");
-        char *delim = ":";
+        char *path;
+        char *delim;
         char *myTok;
 
+	path = getenv("PATH");
+	delim = ":";
         if (path == NULL)
         {
                 printf("Path Not Found");
-
+		return (NULL);
         }       
         myTok = strtok(path, delim);
-
 	while (myTok != NULL)
 	{
 		printf("%s\n", myTok);
-		
 		myTok = strtok(NULL, delim);
 	}
 }
-

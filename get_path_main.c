@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "env.h"
 
-void printPath();
-
-int main()
+int main(void)
 {
 
-printPath();
-
-return (0);
+	print_path();
+	exit(EXIT_SUCCESS);
 }
