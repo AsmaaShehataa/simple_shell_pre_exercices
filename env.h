@@ -12,4 +12,6 @@ struct node
 };
 struct node *linked_path(void);
 
+int _setenv(const char *name, const char *value, int overwrite);
+int _unsetenv(const char *name);
 #endif
